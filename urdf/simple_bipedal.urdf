@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version:   Build Version: 1.6.9305.33219
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="simple_bipedal">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="3.14816865236183E-18 -0.0233636341691508 5.99607732512132E-17"
+        rpy="0 0 0" />
+      <mass
+        value="104.073975462643" />
+      <inertia
+        ixx="3.66615542809238"
+        ixy="9.66734798109379E-17"
+        ixz="7.61041258947234E-17"
+        iyy="1.62745702837988"
+        iyz="-2.18052171094121E-16"
+        izz="2.70815583070119" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_bipedal/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_bipedal/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="hip_pitch_left_link">
+    <inertial>
+      <origin
+        xyz="2.50382927681168E-08 -5.55111512312578E-17 2.50382927446946E-08"
+        rpy="0 0 0" />
+      <mass
+        value="8.17782778579702" />
+      <inertia
+        ixx="0.0274609810436168"
+        ixy="1.76383028134348E-08"
+        ixz="5.13566616479572E-15"
+        iyy="0.0285282306584235"
+        iyz="-1.76383028106682E-08"
+        izz="0.0274609810436168" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_bipedal/meshes/hip_pitch_left_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_bipedal/meshes/hip_pitch_left_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hip_pitch_left_joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.355 -0.125"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="hip_pitch_left_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="hip_roll_left_link">
+    <inertial>
+      <origin
+        xyz="-8.88594652651202E-19 -0.0742004636472874 -2.77555756156289E-17"
+        rpy="0 0 0" />
+      <mass
+        value="6.12916564770063" />
+      <inertia
+        ixx="0.0301865314382572"
+        ixy="-1.97648441430744E-18"
+        ixz="-2.5976824930112E-18"
+        iyy="0.0340758392796289"
+        iyz="1.20342273549719E-18"
+        izz="0.044385967333728" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_bipedal/meshes/hip_roll_left_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_bipedal/meshes/hip_roll_left_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hip_roll_left_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="hip_pitch_left_link" />
+    <child
+      link="hip_roll_left_link" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="hip_yaw_left_link">
+    <inertial>
+      <origin
+        xyz="-1.51139860408346E-08 -0.163359087286797 1.38777878078145E-17"
+        rpy="0 0 0" />
+      <mass
+        value="15.9288324363201" />
+      <inertia
+        ixx="0.158006429792871"
+        ixy="6.81537911575121E-09"
+        ixz="-4.86680100502339E-08"
+        iyy="0.0486950529120668"
+        iyz="2.84857007659769E-18"
+        izz="0.155807620289761" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_bipedal/meshes/hip_yaw_left_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_bipedal/meshes/hip_yaw_left_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hip_yaw_left_joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.15 0"
+      rpy="0 0 0" />
+    <parent
+      link="hip_roll_left_link" />
+    <child
+      link="hip_yaw_left_link" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="knee_pitch_left_link">
+    <inertial>
+      <origin
+        xyz="-2.57657030922869E-08 -0.195112626503353 -2.53453038001616E-08"
+        rpy="0 0 0" />
+      <mass
+        value="17.3220695885815" />
+      <inertia
+        ixx="0.243852593261598"
+        ixy="6.37172732215568E-08"
+        ixz="-4.73538003380343E-08"
+        iyy="0.0694508483137373"
+        iyz="-5.72266275466994E-08"
+        izz="0.227453959920081" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_bipedal/meshes/knee_pitch_left_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_bipedal/meshes/knee_pitch_left_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="knee_pitch_left_joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.25 0"
+      rpy="0 0 0" />
+    <parent
+      link="hip_yaw_left_link" />
+    <child
+      link="knee_pitch_left_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="ankle_pitch_left_link">
+    <inertial>
+      <origin
+        xyz="2.18852964426249E-18 -0.141401742541555 -2.77555756156289E-17"
+        rpy="0 0 0" />
+      <mass
+        value="13.3431533790223" />
+      <inertia
+        ixx="0.119819082175432"
+        ixy="3.56064212644614E-18"
+        ixz="-8.57344274603269E-19"
+        iyy="0.0616832875211421"
+        iyz="-1.53060376016585E-17"
+        izz="0.107284629027132" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_bipedal/meshes/ankle_pitch_left_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_bipedal/meshes/ankle_pitch_left_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ankle_pitch_left_joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.3 0"
+      rpy="0 0 0" />
+    <parent
+      link="knee_pitch_left_link" />
+    <child
+      link="ankle_pitch_left_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="ankle_roll_left_link">
+    <inertial>
+      <origin
+        xyz="6.75518732543963E-18 -0.0513144703910333 1.38777878078145E-17"
+        rpy="0 0 0" />
+      <mass
+        value="4.64559018505733" />
+      <inertia
+        ixx="0.0197277410568368"
+        ixy="1.9750314774744E-18"
+        ixz="-3.28074232638804E-18"
+        iyy="0.0425686282909446"
+        iyz="-1.73111382544016E-18"
+        izz="0.0457633969523077" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_bipedal/meshes/ankle_roll_left_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_bipedal/meshes/ankle_roll_left_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ankle_roll_left_joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.2 0"
+      rpy="0 0 0" />
+    <parent
+      link="ankle_pitch_left_link" />
+    <child
+      link="ankle_roll_left_link" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="hip_pitch_right_link">
+    <inertial>
+      <origin
+        xyz="2.50382927761668E-08 5.55111512312578E-17 2.50382927724502E-08"
+        rpy="0 0 0" />
+      <mass
+        value="8.17782778579702" />
+      <inertia
+        ixx="0.0274609810436168"
+        ixy="1.76383028094622E-08"
+        ixz="5.13166804588344E-15"
+        iyy="0.0285282306584235"
+        iyz="-1.76383028105973E-08"
+        izz="0.0274609810436168" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_bipedal/meshes/hip_pitch_right_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_bipedal/meshes/hip_pitch_right_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hip_pitch_right_joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.355 0.125"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="hip_pitch_right_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="hip_roll_right_link">
+    <inertial>
+      <origin
+        xyz="-7.36727495988482E-18 -0.0742004636472874 0"
+        rpy="0 0 0" />
+      <mass
+        value="6.12916564770063" />
+      <inertia
+        ixx="0.0301865314382572"
+        ixy="-1.65758435059659E-18"
+        ixz="-2.29671192274964E-18"
+        iyy="0.0340758392796289"
+        iyz="1.65850481115776E-18"
+        izz="0.044385967333728" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_bipedal/meshes/hip_roll_right_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_bipedal/meshes/hip_roll_right_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hip_roll_right_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="hip_pitch_right_link" />
+    <child
+      link="hip_roll_right_link" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="hip_yaw_right_link">
+    <inertial>
+      <origin
+        xyz="-1.51139860422597E-08 -0.163359087286797 0"
+        rpy="0 0 0" />
+      <mass
+        value="15.9288324363201" />
+      <inertia
+        ixx="0.158006429792871"
+        ixy="6.81537911357161E-09"
+        ixz="-4.86680100505176E-08"
+        iyy="0.0486950529120669"
+        iyz="2.16392355495271E-18"
+        izz="0.155807620289761" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_bipedal/meshes/hip_yaw_right_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_bipedal/meshes/hip_yaw_right_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hip_yaw_right_joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.15 0"
+      rpy="0 0 0" />
+    <parent
+      link="hip_roll_right_link" />
+    <child
+      link="hip_yaw_right_link" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="knee_pitch_right_link">
+    <inertial>
+      <origin
+        xyz="-2.57657030843257E-08 -0.195112626503353 -2.53453038001616E-08"
+        rpy="0 0 0" />
+      <mass
+        value="17.3220695885815" />
+      <inertia
+        ixx="0.243852593261598"
+        ixy="6.37172732266414E-08"
+        ixz="-4.73538003406399E-08"
+        iyy="0.0694508483137373"
+        iyz="-5.72266275207433E-08"
+        izz="0.227453959920081" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_bipedal/meshes/knee_pitch_right_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_bipedal/meshes/knee_pitch_right_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="knee_pitch_right_joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.25 0"
+      rpy="0 0 0" />
+    <parent
+      link="hip_yaw_right_link" />
+    <child
+      link="knee_pitch_right_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="ankle_pitch_right_link">
+    <inertial>
+      <origin
+        xyz="-5.33523512629707E-19 -0.141401742541555 -1.38777878078145E-17"
+        rpy="0 0 0" />
+      <mass
+        value="13.3431533790223" />
+      <inertia
+        ixx="0.119819082175432"
+        ixy="4.49687333526178E-18"
+        ixz="-5.73588237273077E-19"
+        iyy="0.0616832875211421"
+        iyz="3.7107417489958E-19"
+        izz="0.107284629027132" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_bipedal/meshes/ankle_pitch_right_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_bipedal/meshes/ankle_pitch_right_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ankle_pitch_right_joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.3 0"
+      rpy="0 0 0" />
+    <parent
+      link="knee_pitch_right_link" />
+    <child
+      link="ankle_pitch_right_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="ankle_roll_right_link">
+    <inertial>
+      <origin
+        xyz="3.0417250453847E-18 -0.0513144703910333 -1.38777878078145E-17"
+        rpy="0 0 0" />
+      <mass
+        value="4.64559018505733" />
+      <inertia
+        ixx="0.0197277410568368"
+        ixy="2.37138749549365E-18"
+        ixz="-1.57816614955685E-18"
+        iyy="0.0425686282909446"
+        iyz="-3.54638334121962E-18"
+        izz="0.0457633969523077" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_bipedal/meshes/ankle_roll_right_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_bipedal/meshes/ankle_roll_right_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ankle_roll_right_joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.2 0"
+      rpy="0 0 0" />
+    <parent
+      link="ankle_pitch_right_link" />
+    <child
+      link="ankle_roll_right_link" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+</robot>
