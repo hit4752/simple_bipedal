@@ -96,6 +96,11 @@
       link="hip_pitch_left_link" />
     <axis
       xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="100.0"
+      velocity="10.0" />
   </joint>
   <link
     name="hip_roll_left_link">
@@ -149,6 +154,11 @@
       link="hip_roll_left_link" />
     <axis
       xyz="1 0 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="100.0"
+      velocity="10.0" />
   </joint>
   <link
     name="hip_yaw_left_link">
@@ -202,6 +212,11 @@
       link="hip_yaw_left_link" />
     <axis
       xyz="0 -1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="100.0"
+      velocity="10.0" />
   </joint>
   <link
     name="knee_pitch_left_link">
@@ -255,6 +270,11 @@
       link="knee_pitch_left_link" />
     <axis
       xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="100.0"
+      velocity="10.0" />
   </joint>
   <link
     name="ankle_pitch_left_link">
@@ -308,6 +328,11 @@
       link="ankle_pitch_left_link" />
     <axis
       xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="100.0"
+      velocity="10.0" />
   </joint>
   <link
     name="ankle_roll_left_link">
@@ -361,6 +386,11 @@
       link="ankle_roll_left_link" />
     <axis
       xyz="1 0 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="100.0"
+      velocity="10.0" />
   </joint>
   <link
     name="hip_pitch_right_link">
@@ -414,6 +444,11 @@
       link="hip_pitch_right_link" />
     <axis
       xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="100.0"
+      velocity="10.0" />
   </joint>
   <link
     name="hip_roll_right_link">
@@ -467,6 +502,11 @@
       link="hip_roll_right_link" />
     <axis
       xyz="1 0 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="100.0"
+      velocity="10.0" />
   </joint>
   <link
     name="hip_yaw_right_link">
@@ -520,6 +560,11 @@
       link="hip_yaw_right_link" />
     <axis
       xyz="0 -1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="100.0"
+      velocity="10.0" />
   </joint>
   <link
     name="knee_pitch_right_link">
@@ -573,6 +618,11 @@
       link="knee_pitch_right_link" />
     <axis
       xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="100.0"
+      velocity="10.0" />
   </joint>
   <link
     name="ankle_pitch_right_link">
@@ -626,6 +676,11 @@
       link="ankle_pitch_right_link" />
     <axis
       xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="100.0"
+      velocity="10.0" />
   </joint>
   <link
     name="ankle_roll_right_link">
@@ -679,5 +734,10 @@
       link="ankle_roll_right_link" />
     <axis
       xyz="1 0 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="100.0"
+      velocity="10.0" />
   </joint>
 </robot>
